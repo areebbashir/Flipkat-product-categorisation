@@ -42,16 +42,16 @@ Then I tried using custom stopwords that included the words from the data that I
 
 Finally I used Glove embeddings and trained XGBoost and neural networks with them. I used two types of neural networks- a simple one and a Bi-LSTM model.
 
-| Metric  | TF-IDF | 
+| Metric  | XGBoost | 
 | ------------- | ------------- | 
-| Log Loss  |   |  
-| F-1 Score  |   | 
+| Log Loss  | 0.117  |  
+| F-1 Score  | 0.97  | 
 
 
-| Metric  | NN | Bi-LSTM         |
+| Metric  | NN | Bi-LSTM |
 | ------------- | ------------- | -------------|
-| Log Loss  |   | | 
-| F-1 Score  |   | |
+| Log Loss  | 0.080  | 0.164 | 
+| F-1 Score  | 0.98  | 0.96 |
 
 
 

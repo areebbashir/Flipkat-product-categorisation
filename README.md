@@ -7,8 +7,8 @@ The data is split into training and test sets to first train the ML models and t
 
 ## Approach
 I approached the model in following in the follwing way:
-* **Data Pre-processing
-* **Fitting the model
+* Data Pre-processing
+* Fitting the model
 
 ### Data Pre-processing
 The data preprocessing is started off by cleaning the data. The two useful variables in the data were `product_category_tree` and `description`. Rest of the columns are dropped.
@@ -20,6 +20,9 @@ The text data first needs to be converted to a numeric representation before ML 
 
 After the necessary data preprocessing the various ML models were fitted on the data. The F-1 score and multiclass log loss are choosen as a metric to measure the accuracy of the models.
 
-
+| Metric  | Logistic Regression | SVM          |
+| ------------- | ------------- | -------------|
+| Log Loss  | Content Cell  | |
+| F-1 Score  | Content Cell  | |
 
 

@@ -23,8 +23,8 @@ Text vectorization using TF-IDF
 
 | Metric  | Logistic Regression | SVM          | XGBoost|
 | ------------- | ------------- | -------------|-------------|
-| Log Loss  |   | | |
-| F-1 Score  |   | | |
+| Log Loss  |  0.242 | | |
+| F-1 Score  | 0.97  | | |
 
 Text vectorization using TF-IDF
 

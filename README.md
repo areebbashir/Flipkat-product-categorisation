@@ -7,8 +7,8 @@ The data is split into training and test sets to first train the ML models and t
 
 ## Approach
 I approached the model in following in the follwing way:
--Data Pre-processing
--Fitting the model
+*Data Pre-processing
+*Fitting the model
 
 ### Data Pre-processing
 The data preprocessing is started off by cleaning the data 

@@ -19,26 +19,27 @@ The text data first needs to be converted to a numeric representation before ML 
 ### Fitting the best model
 
 After the necessary data preprocessing the various ML models were fitted on the data. The F-1 score and multiclass log loss are choosen as a metric to measure the accuracy of the models.
-Text vectorization using TF-IDF
-
-| Metric  | Logistic Regression | SVM          | XGBoost|
-| ------------- | ------------- | -------------|-------------|
-| Log Loss  |  0.242 | | |
-| F-1 Score  | 0.97  | | |
 
 Text vectorization using TF-IDF
 
 | Metric  | Logistic Regression | SVM          | XGBoost|
 | ------------- | ------------- | -------------|-------------|
-| Log Loss  |   | | |
-| F-1 Score  |   | | |
+| Log Loss  |  0.242 | 0.154 | |
+| F-1 Score  | 0.97  | 0.96  | |
+
+Text vectorization using Count Vectorizer
+
+| Metric  | Logistic Regression | SVM          | XGBoost|
+| ------------- | ------------- | -------------|-------------|
+| Log Loss  | 0.086  | 0.224 | |
+| F-1 Score  |  0.98 | 0.93  | |
 
 Then I tried using custom stopwords that included the words from the data that I found to be not useful. I trained them on only logistic regresion model but saw no improvement
 
 | Metric  | TF-IDF | Count vectorizer         |
 | ------------- | ------------- | -------------|
-| Log Loss  |   | | 
-| F-1 Score  |   | | 
+| Log Loss  | 0.268  | 0.082 | 
+| F-1 Score  | 0.97  | 0.98  | 
 
 Finally I used Glove embeddings and trained XGBoost and neural networks with them. I used two types of neural networks- a simple one and a Bi-LSTM model.
 

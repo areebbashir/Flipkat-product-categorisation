@@ -32,8 +32,8 @@ Text vectorization using Count Vectorizer
 
 | Metric  | Logistic Regression | SVM          | XGBoost|
 | ------------- | ------------- | -------------|-------------|
-| Log Loss  | 0.086  | 0.224 | |
-| F-1 Score  |  0.98 | 0.93  | |
+| Log Loss  | 0.086  | 0.224 | 0.074 |
+| F-1 Score  |  0.98 | 0.93  | 0.98 |
 
 We see that XGBoost is clearly a better performing model with better accuracy than any other models when used on both techniques of vectorization. 
 
@@ -46,13 +46,16 @@ Then I tried using custom stopwords that included the words from the data that I
 
 We see that there is no clear affect on the accuracy by the use of custom stopwords. So this proves to be not useful. 
 
-Finally I used Glove embeddings and trained XGBoost and neural networks with them. I used two types of neural networks- a simple one and a Bi-LSTM model.
+
+Finally I used Glove embeddings and trained XGBoost and neural networks with them. 
 
 | Metric  | XGBoost | 
 | ------------- | ------------- | 
 | Log Loss  | 0.117  |  
 | F-1 Score  | 0.97  | 
 
+I used two types of neural networks- a simple one and a Bi-LSTM model.
+Both of them are trained with glove embeddings.
 
 | Metric  | NN | Bi-LSTM |
 | ------------- | ------------- | -------------|

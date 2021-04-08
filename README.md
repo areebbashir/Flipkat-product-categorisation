@@ -15,6 +15,8 @@ The data preprocessing is started off by cleaning the data. The two useful varia
 
 The category is extracted from the `product_category_tree` column. The level 1 of the hierarchy tree is defined as the primary category for our predictions.
 The data is split into 85% training and 15% test sets.  The models are trained on training sets and then validated on test sets.
+
+The data cleaning involved removing all the punctuations, splitting the sentences into words and removing all the stopwords.
 The text data first needs to be converted to a numeric representation before ML algorithms are applied to it. The methods which achieve this goal are called text vectorisation methods. The most popular ones are TF-IDF and count vectorizer. In most cases, they result in what is called a Term-Document matrix (TDM). I aslo used glove embeddings([0link](http://www-nlp.stanford.edu/data/glove.840B.300d.zip ))
 
 ### Fitting the best model
@@ -62,6 +64,8 @@ Both of them are trained with glove embeddings.
 | Log Loss  | 0.080  | 0.133 | 
 | F-1 Score  | 0.98  | 0.97 |
 
+
+After testing 12 different model combinations on our dataset and evaluating the predictions with metrics of log loss and F1 score wee see that XGBoost used on the count vectorizer processed data was the best performing. The neural net models are all giving great results when used with glove embeddings. The basic 3 layer neural net is the best performing nd even out performs the Bilstm ang GRU models.
 
 
 

@@ -53,7 +53,7 @@ Then I tried using custom stopwords that included the words from the data that I
 | Log Loss  | 0.268  | 0.082 | 
 | F-1 Score  | 0.97  | 0.98  | 
 
-We see that there is no clear affect on the accuracy by the use of custom stopwords. So this proves to be not useful. 
+We see that there is no significant affect on the accuracy by the use of custom stopwords. So this proves to be not useful. 
 
 
 Finally I used Glove embeddings and trained XGBoost and neural networks with them. 

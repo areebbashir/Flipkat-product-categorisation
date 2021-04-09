@@ -63,7 +63,7 @@ I used three types of neural networks- a simple one and a Bi-LSTM and a GRU mode
 All of them are trained with glove embeddings.
 
 | Metric  | NN | Bi-LSTM | GRU |
-| ------------- | ------------- | ---------__----|----------|
+| ------------- | ------------- | -------------|----------|
 | Log Loss  | 0.080  | 0.133 | 0.123 |
 | F-1 Score  | 0.98  | 0.97 | 0.97 |
 

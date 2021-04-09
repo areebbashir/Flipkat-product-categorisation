@@ -16,6 +16,8 @@ The data preprocessing is started off by cleaning the data. The two useful varia
 The category is extracted from the `product_category_tree` column. The level 1 of the hierarchy tree is defined as the primary category for our predictions.
 The data is split into 85% training and 15% test sets.  The models are trained on training sets and then validated on test sets.
 
+Only 20 categories were used from the available 32. The categories that were drop contained less than 25 rows(products). These were removed to because because of lack fo data.
+
 The data cleaning involved removing all the punctuations, splitting the sentences into words and removing all the stopwords.
 The text data first needs to be converted to a numeric representation before ML algorithms are applied to it. The methods which achieve this goal are called text vectorisation methods. The most popular ones are TF-IDF and count vectorizer. In most cases, they result in what is called a Term-Document matrix (TDM). I aslo used glove embeddings([link](http://www-nlp.stanford.edu/data/glove.840B.300d.zip ))
 
@@ -64,7 +66,7 @@ All of them are trained with glove embeddings.
 
 | Metric  | NN | Bi-LSTM | GRU |
 | ------------- | ------------- | -------------|----------|
-| Log Loss  | 0.080  | 0.133 | 0.123 |
+| Log Loss  | 0.095  | 0.133 | 0.123 |
 | F-1 Score  | 0.98  | 0.97 | 0.97 |
 
 

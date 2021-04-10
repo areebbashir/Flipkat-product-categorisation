@@ -74,14 +74,16 @@ All of them are trained with glove embeddings.
 | Log Loss  | 0.095  | 0.133 | 0.123 |
 | F-1 Score  | 0.98  | 0.97 | 0.97 |
 
-![NN](https://user-images.githubusercontent.com/47393872/114260264-5e1c1980-99f1-11eb-970d-da229a7f09b4.png)
 <div align="center"> Neural Network training loss vs Validation Loss over number of epochs</div>
 
-![Bilstm](https://user-images.githubusercontent.com/47393872/114260291-83a92300-99f1-11eb-915c-b4fe97a9bb98.png)
-<div align="center"> BiLSTM model training loss vs Validation Loss over number of epochs</div>
+![NN](https://user-images.githubusercontent.com/47393872/114260264-5e1c1980-99f1-11eb-970d-da229a7f09b4.png)
 
-![GRU](https://user-images.githubusercontent.com/47393872/114260298-899f0400-99f1-11eb-966d-a418c599cb28.png)
+<div align="center"> BiLSTM model training loss vs Validation Loss over number of epochs</div>
+![Bilstm](https://user-images.githubusercontent.com/47393872/114260291-83a92300-99f1-11eb-915c-b4fe97a9bb98.png)
+
+
 <div align="center"> GRU model training loss vs Validation Loss over number of epochs</div>
+![GRU](https://user-images.githubusercontent.com/47393872/114260298-899f0400-99f1-11eb-966d-a418c599cb28.png)
 
 
 

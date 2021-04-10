@@ -75,7 +75,7 @@ All of them are trained with glove embeddings.
 | F-1 Score  | 0.98  | 0.97 | 0.97 |
 
 
-* Conclusion
+## Conclusion
 After testing 12 different model combinations on our dataset and evaluating the predictions with metrics of log loss and F1 score we see that XGBoost used on the count vectorizer and TFIDF vectorizer processed data was the best performing. The neural net models are all giving great results when used with glove embeddings. The basic 3 layer neural net is the best performing. This even outperforms the BILSTM and GRU models.
 
 

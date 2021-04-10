@@ -76,7 +76,7 @@ All of them are trained with glove embeddings.
 
 <div align="center"> Neural Network training loss vs Validation Loss over number of epochs</div><br />
 
-![NN](https://user-images.githubusercontent.com/47393872/114260264-5e1c1980-99f1-11eb-970d-da229a7f09b4.png)
+![NN](https://user-images.githubusercontent.com/47393872/114263169-a2afb100-9a01-11eb-8828-fe84fb6bbb38.png)
 
 <div align="center"> BiLSTM model training loss vs Validation Loss over number of epochs</div><br />
 

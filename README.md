@@ -46,24 +46,25 @@ So the most frequent words that may occur in `description` are given equal weigh
 
 We see that XGBoost is clearly a better performing model with better accuracy than any other models when used on both techniques of vectorization. 
 
-Then I tried using custom stopwords that included the words from the data that I found to be not useful. I trained them on only logistic regresion model but saw no improvement
+Then the approach was to try using custom stopwords that included the words from the data that were found to be not useful. The data was trained on only logistic regresion model.
 
 | Metric  | TF-IDF | Count vectorizer         |
 | ------------- | ------------- | -------------|
 | Log Loss  | 0.268  | 0.082 | 
 | F-1 Score  | 0.97  | 0.98  | 
 
-We see that there is no significant affect on the accuracy by the use of custom stopwords. So this proves to be not useful. 
+There is no significant affect on the accuracy by the use of custom stopwords. So this proves to be not useful. 
 
+Finally the neural networks were introduced. The nueral networks were trained on glove vectors. 
 
-Finally I used Glove embeddings and trained XGBoost and neural networks with them. 
+First the XGBoost was used on vocanulary built using glove vectors.
 
 | Metric  | XGBoost | 
 | ------------- | ------------- | 
 | Log Loss  | 0.117  |  
 | F-1 Score  | 0.97  | 
 
-I used three types of neural networks- a simple one and a Bi-LSTM and a GRU model.
+There were three types of neural networks used - a simple one and a Bi-LSTM and a GRU model.
 All of them are trained with glove embeddings.
 
 | Metric  | NN | Bi-LSTM | GRU |
@@ -72,7 +73,7 @@ All of them are trained with glove embeddings.
 | F-1 Score  | 0.98  | 0.97 | 0.97 |
 
 
-After testing 12 different model combinations on our dataset and evaluating the predictions with metrics of log loss and F1 score wee see that XGBoost used on the count vectorizer and TFIDF vectorizer processed data was the best performing. The neural net models are all giving great results when used with glove embeddings. The basic 3 layer neural net is the best performing. This even outperforms the BILSTM ang GRU models.
+After testing 12 different model combinations on our dataset and evaluating the predictions with metrics of log loss and F1 score we see that XGBoost used on the count vectorizer and TFIDF vectorizer processed data was the best performing. The neural net models are all giving great results when used with glove embeddings. The basic 3 layer neural net is the best performing. This even outperforms the BILSTM and GRU models.
 
 
 

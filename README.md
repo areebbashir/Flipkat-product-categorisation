@@ -75,10 +75,14 @@ All of them are trained with glove embeddings.
 | F-1 Score  | 0.98  | 0.97 | 0.97 |
 
 ![NN](https://user-images.githubusercontent.com/47393872/114260264-5e1c1980-99f1-11eb-970d-da229a7f09b4.png)
+<div align="center"> Neural Network training loss vs Validation Loss over number of epochs</div>
+![Bilstm](https://user-images.githubusercontent.com/47393872/114260291-83a92300-99f1-11eb-915c-b4fe97a9bb98.png)
+<div align="center"> BiLSTM model training loss vs Validation Loss over number of epochs</div>
+![GRU](https://user-images.githubusercontent.com/47393872/114260298-899f0400-99f1-11eb-966d-a418c599cb28.png)
+<div align="center"> GRU model training loss vs Validation Loss over number of epochs</div>
 
-![Neural Net](https://github.com/areebbashir/MIDAS-nlp-task/blob/graphs/NN.png?raw=true)
-![Bi-LSTM](https://github.com/areebbashir/MIDAS-nlp-task/blob/graphs/Bilstm.png?raw=true)
-![GRU](https://github.com/areebbashir/MIDAS-nlp-task/blob/graphs/GRU.png?raw=true)
+We see that as the models goes through more epochs the two curves start to converge. This means that the model is fitting the training and test set effienctly and this is model works well.
+
 
 ## Conclusion
 After testing 12 different model combinations on our dataset and evaluating the predictions with metrics of log loss and F1 score we see that XGBoost used on the count vectorizer and TFIDF vectorizer processed data was the best performing. The neural net models are all giving great results when used with glove embeddings. The basic 3 layer neural net is the best performing. This even outperforms the BILSTM and GRU models.

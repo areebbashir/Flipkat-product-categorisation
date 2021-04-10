@@ -25,14 +25,14 @@ The text data first needs to be converted to a numeric representation before ML 
 
 After the necessary data preprocessing the various ML models were fitted on the data. The F-1 score and multiclass log loss are choosen as a metric to measure the accuracy of the models.
 
-Text vectorization using TF-IDF
+* Text vectorization using TF-IDF on some classification models
 
 | Metric  | Logistic Regression | SVM          | XGBoost|
 | ------------- | ------------- | -------------|-------------|
 | Log Loss  |  0.242 | 0.154 | 0.079 |
 | F-1 Score  | 0.97  | 0.96  | 0.98 |
 
-Text vectorization using Count Vectorizer
+* Text vectorization using Count Vectorizer on some classification models
 
 | Metric  | Logistic Regression | SVM          | XGBoost|
 | ------------- | ------------- | -------------|-------------|
@@ -46,6 +46,7 @@ So the most frequent words that may occur in `description` are given equal weigh
 
 We see that XGBoost is clearly a better performing model with better accuracy than any other models when used on both techniques of vectorization. 
 
+* Using stopwords
 Then the approach was to try using custom stopwords that included the words from the data that were found to be not useful. The data was trained on only logistic regresion model.
 
 | Metric  | TF-IDF | Count vectorizer         |
@@ -55,6 +56,7 @@ Then the approach was to try using custom stopwords that included the words from
 
 There is no significant affect on the accuracy by the use of custom stopwords. So this proves to be not useful. 
 
+* Glove Embeddings
 Finally the neural networks were introduced. The nueral networks were trained on glove vectors. 
 
 First the XGBoost was used on vocanulary built using glove vectors.
@@ -73,6 +75,7 @@ All of them are trained with glove embeddings.
 | F-1 Score  | 0.98  | 0.97 | 0.97 |
 
 
+* Conclusion
 After testing 12 different model combinations on our dataset and evaluating the predictions with metrics of log loss and F1 score we see that XGBoost used on the count vectorizer and TFIDF vectorizer processed data was the best performing. The neural net models are all giving great results when used with glove embeddings. The basic 3 layer neural net is the best performing. This even outperforms the BILSTM and GRU models.
 
 

@@ -85,7 +85,7 @@ All of them are trained with glove embeddings.
 
 <div align="center"> GRU model training loss vs Validation Loss over number of epochs</div><br />
 
-<div align="center">![GRU](https://user-images.githubusercontent.com/47393872/114260298-899f0400-99f1-11eb-966d-a418c599cb28.png)</div>
+![GRU](https://user-images.githubusercontent.com/47393872/114260298-899f0400-99f1-11eb-966d-a418c599cb28.png)
 <br />
 
 

@@ -90,10 +90,9 @@ All of them are trained with glove embeddings.
 
 
 We see that as the models progress through epochs the two curves, the training loss curve and the validation loss curve start to converge. This means that with the number of epochs the models are fitting the training and test sets effienctly. 
-
-![NN](https://user-images.githubusercontent.com/47393872/114262920-2c5e7f00-9a00-11eb-9e4b-053fdc8f8146.png)
-![Bilstm](https://user-images.githubusercontent.com/47393872/114262921-2d8fac00-9a00-11eb-8000-90529d9b6140.png)
-![GRU](https://user-images.githubusercontent.com/47393872/114262923-2d8fac00-9a00-11eb-8724-5b2a0c7f6ad2.png)
+![NN](https://user-images.githubusercontent.com/47393872/114262965-6def2a00-9a00-11eb-8532-207580065e86.png)
+![Bilstm](https://user-images.githubusercontent.com/47393872/114262966-6f205700-9a00-11eb-8404-aaeebc43230f.png)
+![GRU](https://user-images.githubusercontent.com/47393872/114262969-6fb8ed80-9a00-11eb-8a99-ab0a05fb0eb5.png)
 
 
 

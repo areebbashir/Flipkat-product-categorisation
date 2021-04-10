@@ -76,23 +76,21 @@ All of them are trained with glove embeddings.
 
 <div align="center"> Neural Network training loss vs Validation Loss over number of epochs</div><br />
 
-![NN](https://user-images.githubusercontent.com/47393872/114260264-5e1c1980-99f1-11eb-970d-da229a7f09b4.png)
+<div align="center"> ![NN](https://user-images.githubusercontent.com/47393872/114260264-5e1c1980-99f1-11eb-970d-da229a7f09b4.png)</div>
 
 <div align="center"> BiLSTM model training loss vs Validation Loss over number of epochs</div><br />
 
-![Bilstm](https://user-images.githubusercontent.com/47393872/114260291-83a92300-99f1-11eb-915c-b4fe97a9bb98.png)
+ <div align="center"> ![Bilstm](https://user-images.githubusercontent.com/47393872/114260291-83a92300-99f1-11eb-915c-b4fe97a9bb98.png)</div>
 
 
 <div align="center"> GRU model training loss vs Validation Loss over number of epochs</div><br />
 
-![GRU](https://user-images.githubusercontent.com/47393872/114260298-899f0400-99f1-11eb-966d-a418c599cb28.png)
+<div align="center"> ![GRU](https://user-images.githubusercontent.com/47393872/114260298-899f0400-99f1-11eb-966d-a418c599cb28.png)</div>
 <br />
 
 
 We see that as the models progress through epochs the two curves, the training loss curve and the validation loss curve start to converge. This means that with the number of epochs the models are fitting the training and test sets effienctly. 
-![NN](https://user-images.githubusercontent.com/47393872/114262965-6def2a00-9a00-11eb-8532-207580065e86.png)
-![Bilstm](https://user-images.githubusercontent.com/47393872/114262966-6f205700-9a00-11eb-8404-aaeebc43230f.png)
-![GRU](https://user-images.githubusercontent.com/47393872/114262969-6fb8ed80-9a00-11eb-8a99-ab0a05fb0eb5.png)
+
 
 
 

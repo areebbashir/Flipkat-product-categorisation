@@ -85,8 +85,8 @@ All of them are trained with glove embeddings.
 
 <div align="center"> GRU model training loss vs Validation Loss over number of epochs</div>/
 
-![GRU](https://user-images.githubusercontent.com/47393872/114260298-899f0400-99f1-11eb-966d-a418c599cb28.png)/
-
+![GRU](https://user-images.githubusercontent.com/47393872/114260298-899f0400-99f1-11eb-966d-a418c599cb28.png)
+<br />
 
 
 We see that as the models progress through epochs the two curves, the training loss curve and the validation loss curve start to converge. This means that with the number of epochs the models are fitting the training and test sets effienctly. 

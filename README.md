@@ -1,4 +1,4 @@
-# MIDAS Task 3(NLP)
+# FlipKart product categorisation(NLP)
 A natural language processsing model written in python using jupyter notebook.
 
 ## Problem

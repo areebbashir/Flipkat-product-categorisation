@@ -1,4 +1,4 @@
-# FlipKart product categorisation(NLP)
+# Flipkart product categorisation(NLP)
 A natural language processsing model written in python using jupyter notebook.
 
 ## Problem
